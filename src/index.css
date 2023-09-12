@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+:root {
+  --primary-color: #008080;
+  --secondary-color: #f9f9f9;
+  --text-color: #333333;
+  --button-color: #fbf112;
+  --navbar-color: #fbf112;
+}
+*{
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins' sans-serif;
+  height: 100vh;
+  margin: 0;
+}

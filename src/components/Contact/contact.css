@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+.contact__container {
+  background-color: #021327;
+  max-width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.contact__heading{
+  text-align: center;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.contact__sub-container{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  gap: 10px;
+}
+.input__name-container{
+  display: flex;
+  gap: 10px;
+}
+.input__field{
+  flex: 1;
+  outline: none;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.input__field:last-child{
+  margin-right: 0;
+}
+.email__field{
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+
+}
+.message__field{
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+
+}
+.contact__button button{
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 20px;
+  outline: none;
+  border: none; 
+  width: 100%;
+  background-color: #f9f112;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  box-shadow: 4px 4px rgba(0,0,0,0.2);
+}
+button:hover{
+  background-color: #021327;
+  color: var(--secondary-color);
+}
+@media (max-width: 950px){
+  .contact__sub-container{
+    width: 80%;
+  }
+}
+@media (max-width: 768px){
+  .contact__sub-container{
+    width: 80%;
+  }
+  .input__field{
+    display: flex;
+  }
+  .input__field{
+    flex: 1;
+    width: 50%;
+  }
+  button:hover{
+    background-color: #021327;
+    color: var(--secondary-color);
+  }
+}
+
+@media (min-width: 0px) and (max-width: 360px){
+  .contact__sub-container{
+    width: 100%;
+  }
+  button:hover{
+    background-color: #021327;
+    color: var(--secondary-color);
+  }
+  /* .input__field{
+    display: flex;
+  }
+  .input__field{
+    flex: 1;
+    width: 70%;
+  } */
+}

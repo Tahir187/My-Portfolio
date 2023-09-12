@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+.app__container {
+  max-width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #021327;
+  margin-top: 50px;
+  height: 70vh;
+}
+.home__sub-container {
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  margin-top: 30px;
+}
+.profile__container img {
+  width: 320px;
+  height: fit-content;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.bio__container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  color: var(--secondary-color);
+}
+.main__heading-container {
+  font-size: 30px;
+}
+.heading__container {
+  color: #fbf112;
+}
+.bio__links {
+  display: flex;
+  flex-direction: column;
+}
+.bio__images {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.bio__images a img {
+  width: 50px;
+  height: fit-content;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .app__container{
+    height: 80vh;
+  }
+  .home__sub-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 70%;
+    height: fit-content;
+    padding: 20px;
+  }
+  .profile__container img {
+    max-width: 250px;
+    height: fit-content;
+  }
+}
+@media (max-width: 412px) {
+  .home__sub-container {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    width: 70%;
+    padding: 40px;
+  }
+  .profile__container img {
+    width: 250px;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .home__sub-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    padding: 40px;
+  }
+  .profile__container img {
+    width: 250px;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+}
